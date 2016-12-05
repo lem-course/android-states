@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ohranjanje stanj</string>
+    <string name="button_label">Povečaj</string>
+    <string name="textView_value">0</string>
+</resources>
