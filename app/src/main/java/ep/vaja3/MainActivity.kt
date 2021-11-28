@@ -4,21 +4,24 @@ import android.os.Bundle
 
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_main.*
+import ep.vaja3.databinding.ActivityMainBinding
 
 /***
  * TODO: Ohranite stanje števca medtem ko v aplikaciji zarotirate zaslon
  */
 class MainActivity : AppCompatActivity() {
     private var counter = 0
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
     }
 
     fun increment(view: View?) {
         counter++
-        textView.text = counter.toString()
+        binding.textView.text = counter.toString()
     }
 
     /**
