@@ -1,13 +1,12 @@
 package ep.vaja3
 
 import android.os.Bundle
-
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import ep.vaja3.databinding.ActivityMainBinding
 
 /***
- * TODO: Ohranite stanje števca medtem ko v aplikaciji zarotirate zaslon
+ * TODO: Ohranite stanje števca, medtem ko v aplikaciji rotirate zaslon
  */
 class MainActivity : AppCompatActivity() {
     private var counter = 0
